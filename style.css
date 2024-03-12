@@ -1,0 +1,112 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url(desert.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   background-size: cover;
+  
+}
+
+h1{
+   color: rgb(247, 10, 10);
+   
+}
+form
+{
+ text-align: center;
+ /* background-color:white; */
+ width: 400px;
+ height: 300px;
+ padding: 25px;
+ border-radius: 10px;
+ box-shadow:2px 2px 50px ;
+ backdrop-filter:blur(50px);
+}
+
+#textbox
+{
+    margin-top: 20px;
+    font-size: 30px;
+    padding-left: 15px;
+    text-align: center;
+}
+button
+{
+    font-size: 20px;
+    color:red;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+}
+.input
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.input div label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.input p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media screen and(max-width:600px)
+{
+    body {
+        font-size: 14px;
+    }
+
+    form {
+        width: 80%;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type="number"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #result {
+        font-size: 14px;
+    }
+    
+}
